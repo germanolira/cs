@@ -1,8 +1,6 @@
 const language: string = "Typescript";
 console.log(language);
 
-// using function
-
 interface Props {
   language: string;
 }
