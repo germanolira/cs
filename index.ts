@@ -1,12 +1,12 @@
-const language: string = "Typescript";
-console.log(language);
+const language: string = 'Typescript'
+console.log(language)
 
 interface Props {
-  language: string;
+  language: string
 }
 
 function SelectLanguage({ language }: Props) {
-  console.log(language);
+  console.log(language)
 }
 
-SelectLanguage({ language });
+SelectLanguage({ language })
