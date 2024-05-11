@@ -1,16 +1,18 @@
-const playSong = (artistName, year) => {
+const playSong = (artistName: string, year: number) => {
   return `${artistName} was released in the year ${year}`
 }
 
-const artistName = 'Frank Zappa'
+const artistName: string = 'Frank Zappa'
 
-const age = 52
+const age: number = 52
 
 interface Musician {
   artistName: string
+  age: number
+  deceased: boolean
 }
 
-const musicianInfo = ({ artistName, age, deceased }) => {
+const musicianInfo = ({ artistName, age, deceased }: Musician) => {
   return `${artistName}, age ${age}${deceased ? ' (deceased)' : ''}`
 }
 
