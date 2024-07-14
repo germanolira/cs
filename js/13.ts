@@ -7,25 +7,25 @@ function romanToInt(s: string): number {
     C: 100,
     D: 500,
     M: 1000,
-  }
+  };
 
-  let total = 0
+  let total = 0;
   for (let i = 0; i < s.length; i++) {
-    const current = numerals[s[i]]
-    const next = numerals[s[i + 1]]
+    const current = numerals[s[i]];
+    const next = numerals[s[i + 1]];
 
     if (next && current < next) {
-      total -= current
+      total -= current;
     } else {
-      total += current
+      total += current;
     }
   }
 
-  return total
+  return total;
 }
 
-console.log(romanToInt('III'))
-console.log(romanToInt('IV'))
-console.log(romanToInt('IX'))
-console.log(romanToInt('LVIII'))
-console.log(romanToInt('MCMXCIV'))
+console.log(romanToInt("III"));
+console.log(romanToInt("IV"));
+console.log(romanToInt("IX"));
+console.log(romanToInt("LVIII"));
+console.log(romanToInt("MCMXCIV"));
